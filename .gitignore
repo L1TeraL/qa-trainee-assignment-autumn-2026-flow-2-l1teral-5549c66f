@@ -1,0 +1,14 @@
+.venv/
+
+**pycache**/
+*.py[cod]
+
+.pytest_cache/
+
+allure-results/
+allure-report/
+
+.idea/
+.vscode/
+
+.DS_Store

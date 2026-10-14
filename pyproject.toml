@@ -1,0 +1,27 @@
+[project]
+name = "qa-api-tests"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "pytest==9.1.1",
+    "requests==2.34.2",
+    "allure-pytest==2.16.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "--alluredir=allure-results"
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
